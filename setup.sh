@@ -2,7 +2,7 @@
 set -e
 
 TARGET_USER="user"
-USER_PASSWORD="bursa123!"
+USER_PASSWORD="ChangeMe123!"
 
 NOMACHINE_MAJOR="9.2"
 NOMACHINE_VERSION="9.2.18_3"
@@ -21,6 +21,14 @@ DEBIAN_FRONTEND=noninteractive apt install -y xfce4 xfce4-goodies xorg dbus-x11 
 
 wget -O "${TMP_DEB}" "${NOMACHINE_DEB_URL}"
 DEBIAN_FRONTEND=noninteractive apt install -y "${TMP_DEB}"
+
+if [ -f /usr/NX/etc/node.cfg ]; then
+  if grep -qE '^#?DefaultDesktopCommand' /usr/NX/etc/node.cfg; then
+    sed -i 's|^#\?DefaultDesktopCommand.*|DefaultDesktopCommand "/usr/bin/startxfce4"|' /usr/NX/etc/node.cfg
+  else
+    echo 'DefaultDesktopCommand "/usr/bin/startxfce4"' >> /usr/NX/etc/node.cfg
+  fi
+fi
 
 /etc/NX/nxserver --restart || true
 /etc/NX/nxserver --status || true
