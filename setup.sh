@@ -2,7 +2,7 @@
 set -e
 
 TARGET_USER="user"
-USER_PASSWORD="ChangeMe123!"
+USER_PASSWORD="yourpass1!"
 
 NOMACHINE_MAJOR="9.2"
 NOMACHINE_VERSION="9.2.18_3"
@@ -54,4 +54,5 @@ chown "${TARGET_USER}:${TARGET_USER}" "${USER_HOME}/.xsession" "${USER_HOME}/.xi
 
 echo "Kurulum tamamlandı."
 echo "Kullanıcı: ${TARGET_USER}"
+echo "Şifre: ${USER_PASSWORD}"
 echo "Port    : 4000 (NX)"
