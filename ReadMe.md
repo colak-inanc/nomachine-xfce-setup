@@ -1,5 +1,5 @@
 # NoMachine + XFCE4 Kurulumu
-Kurulum Adımlarını [setup-steps.md](./setup-steps.md) dosyası üzerinden takip edebilirsiniz. 
+Kurulum Adımlarını [setup-steps.md](./setup-steps.md) dosyası üzerinden takip edebilirsiniz. Gerekli özelleştirmeleri yapmanız için bu dosyayı incelemeden kuruluma geçmemeniz tavsiye edilir!
 
 ## Hızlı Kurulum
 
@@ -21,7 +21,7 @@ Kurulum tamamlandığında terminal aşağıdaki gibi görünecektir:
 2. Yeni bir sunucu ekleyin (IP adresini terminal çıktısından alabilirsiniz)
 3. Login ekranında terminal çıktısındaki kullanıcı adı ve şifre bilgilerini kullanın
 
-Not: Bu adımla ilgili tüm detaylar medium yazısında verilmiştir. Hemem yandaki link üzerinden Medium yazısına erişim sağlayabilirsiniz. [NoMachine + XFCE ile En Stabil Remote Desktop Kurulumu](./setup-steps.md)
+Not: Bu adımla ilgili tüm detaylar Medium yazısında verilmiştir. Hemem aşağıdaki link üzerinden Medium yazısına erişim sağlayabilirsiniz. [NoMachine + XFCE ile En Stabil Remote Desktop Kurulumu](https://medium.com/wordspace/ssh-yetersiz-kaldığında-nomachine-xfce-ile-en-stabil-remote-desktop-kurulumu-a424d404f1ca)
 
 ![Login panel](./images/login-panel.png)
 

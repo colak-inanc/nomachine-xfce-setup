@@ -15,6 +15,8 @@ Bu script, Ubuntu/Debian sistemlerde **NoMachine** (uzak masaüstü) ve **XFCE4*
 - Root (sudo) yetkisi
 - İnternet bağlantısı
 
+> **Not:** İsterseniz `setup.sh` dosyasındaki `TARGET_USER` ve `USER_PASSWORD` değişkenlerini kurulum öncesi özelleştirebilirsiniz.
+
 ## Hızlı Kurulum
 
 Aşağıdaki komutu terminale yapıştırın ve çalıştırın. Kurulum 5-10 dakika sürecektir.
@@ -38,7 +40,6 @@ Kurulum bittiğinde NoMachine istemcisi ile bağlanabilirsiniz:
 | **Şifre** | `yourpass1!` |
 
 ## İpuçları
-
-- **Şifre Değiştirme**: Güvenliğiniz için varsayılan şifreyi değiştirin: `passwd user`
-- **Servis Kontrolü**: `sudo /etc/NX/nxserver --status`
+- **Şifre Değiştirme**: Güvenlik için varsayılan şifreyi değiştirin: `passwd user`
+- **Servis Durumu**: NoMachine servisinin durumunu kontrol edin: `sudo /etc/NX/nxserver --status`
 
